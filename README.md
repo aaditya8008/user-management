@@ -9,8 +9,8 @@ Built with **React + Tailwind (Vite)** on the frontend and **FastAPI + MySQL** o
 
  1. user-management # React frontend
  2. backend # FastAPI backend
- 3. schema.sql # SQL script for DB setup
- 4. sample_template.xlsx # Excel upload template
+ 3. schema.sql # SQL script for DB setup (in backend)
+ 4. sample_template.xlsx # Excel upload template (in backend)
 
 
 ---
@@ -38,19 +38,29 @@ Built with **React + Tailwind (Vite)** on the frontend and **FastAPI + MySQL** o
 
 # 1. Clone the repo
 
-git clone https://github.com/YOUR_USERNAME/user-management-system.git
+git clone https://github.com/aaditya8008/user-management
 
 # 2. Backend Setup (Python 3.11+)
 cd backend
-# Create virtual environment
+**Create virtual environment**
 python -m venv venv
 venv\Scripts\activate
 
 pip install -r requirements.txt
 pip install email-validator python-multipart
 
-# Make sure MySQL is running and DB is created
-mysql -u root -p < schema.sql
+**Make sure MySQL is running and DB is created**(XAMPP Used)
+1. Open XAMPP Control Panel
+2. Start the **MySQL** module
+
+#### Option A: Use phpMyAdmin
+- Go to `http://localhost/phpmyadmin`
+- Click on "Import"
+- Upload and run the `schema.sql` file
+
+#### Option B: Use terminal
+If MySQL is on your system path:
+`mysql -u root < schema.sql`
 
 # Run server
 uvicorn main:app --reload
