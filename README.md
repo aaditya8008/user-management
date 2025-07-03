@@ -62,7 +62,7 @@ pip install email-validator python-multipart
 If MySQL is on your system path:
 `mysql -u root < schema.sql`
 
-# Run server
+**Run server**
 uvicorn main:app --reload
 
 # 3. Frontend Setup
