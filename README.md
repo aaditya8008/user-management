@@ -43,11 +43,11 @@ git clone https://github.com/aaditya8008/user-management
 # 2. Backend Setup (Python 3.11+)
 cd backend
 **Create virtual environment**
-python -m venv venv
-venv\Scripts\activate
+-python -m venv venv
+-venv\Scripts\activate
 
-pip install -r requirements.txt
-pip install email-validator python-multipart
+-pip install -r requirements.txt
+-pip install email-validator python-multipart
 
 **Make sure MySQL is running and DB is created**(XAMPP Used)
 1. Open XAMPP Control Panel
