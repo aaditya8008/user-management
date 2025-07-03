@@ -67,8 +67,8 @@ uvicorn main:app --reload
 
 # 3. Frontend Setup
 cd user-management
-npm install
-npm run dev
+1. npm install
+2. npm run dev
 
 # 4. Assumptions & Known Issues
 
